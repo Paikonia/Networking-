@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please choose the type of weather data you need. Currently the available options are limited"
+        android:id="@+id/text"
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:textColor="#000"
+        />
+   <Spinner
+       android:layout_below="@+id/text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/Nextspinner"
+       android:entries="@array/Options"
+       android:textSize="20sp"
+       android:padding="12dp"
+       android:textColor="#000"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Nextspinner"
+        android:id="@+id/next"
+        android:onClick="NextActivity"
+        android:text="GET DATA"
+        />
+
+</RelativeLayout>

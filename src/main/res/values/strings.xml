@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WeatherUpdate</string>
+    <string name="ths">There was an error:</string>
+    <string-array name="Options">
+        <item> Weather data type </item>
+        <item> Current weather </item>
+        <item> 5 day forecast </item>
+        <item> Future projections </item>
+    </string-array>
+</resources>
