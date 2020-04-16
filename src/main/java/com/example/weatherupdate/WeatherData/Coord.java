@@ -27,7 +27,23 @@ public class Coord {
     //{"speed":1.5,"deg":190}
      Integer speed;
     public Integer getSpeed() {
-        return speed;
+      return speed;
+
+@SerializedName("main")
+JSONObject json;
+public JSONObject getJson(){
+return json;
+}
+//After this method is called, call .getInt() to
+//get the various value eg
+
+/*
+  String JJ = "";
+  JSONObject jace = response.getJson;
+  JJ = "Temperature: " + jace.getInt("temp")+ 
+  "\nPressure: "+jace.getInt("pressure");
+   
+*/
     }
 
 }
